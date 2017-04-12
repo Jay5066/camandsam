@@ -1,0 +1,843 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);@import url(https://fonts.googleapis.com/css?family=Pontano+Sans);@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);.pace {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-pointer-events: none;
+    pointer-events: none
+}
+.circle-border {
+    display: inline-block;
+    color: #fff;
+    font: 14px sans-serif;
+    background: #FF9B8E;
+    border: 2px dotted #eee;
+    width: 5em;
+    height: 5em;
+    border-radius: 100px;
+    line-height: 80px;
+    text-align: center;
+    position: relative;
+    top:100px;
+}
+.pace-inactive {
+    display: none
+}
+
+.pace .pace-progress {
+    z-index: 99999999;
+    position: fixed;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 2px;
+    background: #FF9B8E
+}
+
+body,html {
+    height: 100%;
+    min-height: 100%
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #828282;
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 100%;
+   /* letter-spacing: 1px*/
+}
+
+/*.en {
+  display: none !important;
+}*/
+
+.tooltip.top .tooltip-inner {
+    background-color:red;
+}
+
+#fr,#en {cursor: pointer;}
+
+a,a:visited,a:focus,a:active,a:hover,button:focus {
+    outline: 0 none !important
+}
+
+.header-01 {
+    height: 100%
+}
+
+.header-01 .container-fluid {
+    position: absolute;
+    bottom: 40%;
+    width: 100%;
+    padding: 0
+}
+
+.header-01 .flexslider .slides>li {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-01 .flex-viewport,.header-01 .flexslider-container,.header-01 .flexslider .slides {
+    height: 100%
+}
+
+.header-01 ul.slides {
+    margin: 0;
+    padding: 0
+}
+
+.header-01 .flexslider {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0
+}
+
+.header-01 .flex-control-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 0;
+    text-align: center
+}
+
+.header-01 .flex-control-nav li {
+    display: inline-block;
+    *display: inline;
+    zoom:1;margin: 0 6px
+}
+
+.header-01 .flex-control-paging li a {
+    display: block;
+    width: 6px;
+    height: 6px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: #666;
+    background: rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+    -o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+    text-indent: -9999px;
+    cursor: pointer
+}
+
+.header-01 .flex-control-paging li a:hover {
+    background: #333;
+    background: rgba(0,0,0,0.7)
+}
+
+.header-01 .flex-control-paging li a.flex-active {
+    background: #000;
+    background: rgba(0,0,0,0.9);
+    cursor: default
+}
+
+.header-01 .navbar-default {
+    z-index: 101;
+    padding: 20px 0;
+    border: none;
+    background: #fff
+}
+
+.header-01 .navbar-brand {
+    border-radius: 73px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px
+}
+
+.header-01 .navbar-brand:focus,.header-01 .navbar-brand:hover {
+    border: transparent
+}
+
+.header-01 .navbar-default .navbar-nav>li>a {
+    padding: 6px 25px;
+    color: #777;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px
+}
+
+.header-01 .navbar-default .navbar-nav>.active>a,.header-01 .navbar-default .navbar-nav>.active>a:focus,.header-01 .navbar-default .navbar-nav>.active>a:hover {
+    padding: 6PX 25PX;
+    color: #fff;
+    border-radius: 50px;
+    background-color: #FF9B8E;
+    letter-spacing: 3px;
+}
+
+.header-01 .navbar-right {
+    margin-top: 8px
+}
+
+.header-01 h1 {
+    z-index: 100;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    font-weight: 500;
+    white-space: nowrap
+}
+
+.header-01 h1:after,.header-01 h1:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -.5em;
+    width: 1em;
+    height: 100%;
+    background-color: #fbb7ae;
+    pointer-events: none
+}
+
+.header-01 h1:after {
+    z-index: -1;
+    right: -.57em
+}
+
+.header-01 h1:before {
+    z-index: -1;
+    top: -.5em;
+    bottom: auto;
+    left: -.57em
+}
+
+.header-01 h1 a {
+    display: inline-block;
+    position: relative;
+    padding: 0.15em 0.75em;
+    color: #fff;
+    background-color: #FF9B8E;
+    text-decoration: none;
+}
+
+.header-01 h1 a:after,.header-01 h1 a:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -.5em;
+    left: -.05em;
+    width: 0;
+    height: 0;
+    pointer-events: none
+}
+
+.header-01 h1 a:before {
+    top: -.5em;
+    bottom: auto;
+    border-bottom: 0.5em solid #e08d82;
+    border-left: 0.5em solid transparent
+}
+
+.header-01 h1 a:after {
+    right: -.05em;
+    left: auto;
+    border-top: 0.5em solid #e08d82;
+    border-right: 0.5em solid transparent
+}
+
+.header-01 h1 a span {
+    display: block;
+    font-size: 14px !important;
+    letter-spacing: 2px
+}
+
+.story-01 {
+    padding: 120px 0
+}
+
+.story-01 h3 {
+    color: #FF9B8E;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold
+}
+
+.story-01 h3,.story-01 h5 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+
+.story-01 h5 {
+    color: #828282
+}
+
+.story-01 .title {
+    margin-bottom: 50px
+}
+
+.story-01 p {
+    font-size: 1.6em;
+    line-height: 28px
+}
+
+/*.story-01 .left img {
+ width: 100px;
+ height: 200px;
+ background-image: url('http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg');
+ background-size: cover;
+ display: block;
+ border-radius: 100px;
+ -webkit-border-radius: 100px;
+ -moz-border-radius: 100px;
+
+}*/
+
+.img-circular-left{
+ width: 200px;
+ height: 200px;
+ float: left;
+ background-image: url('../../img/cam.jpg');
+ background-size: cover;
+ display: block;
+ border-top-left-radius: 100px;
+ -webkit-border-top-left-radius: 100px;
+ -moz-border-top-left-radius: 100px;
+ border-bottom-right-radius: 100px;
+ -webkit-border-bottom-right-radius: 100px;
+ -moz-border-bottom-right-radius: 100px;
+ /*margin: 0 0 10px 10px;*/
+ background-position: -44px 0px;
+
+}
+
+.img-circular-right{
+ width: 200px;
+ height: 200px;
+ float: right;
+ background-image: url('../../img/sam.jpg');
+ background-size: cover;
+ display: block;
+ border-top-left-radius: 100px;
+ -webkit-border-top-left-radius: 100px;
+ -moz-border-top-left-radius: 100px;
+ border-bottom-right-radius: 100px;
+ -webkit-border-bottom-right-radius: 100px;
+ -moz-border-bottom-right-radius: 100px;
+  margin: 0 0 10px 10px;
+  background-position: -41px 0px;
+
+}
+
+.story-01 .left p {
+    /*padding-right: 170px;*/
+    text-align: right
+}
+
+.story-01 .right img {
+  display: inline-block;
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  left: 40%;
+  border-radius: 50%;
+  bottom: 15px;
+}
+
+.rotate90 {
+ -webkit-transform: rotate(90deg);
+ -moz-transform: rotate(90deg);
+ -o-transform: rotate(90deg);
+ -ms-transform: rotate(90deg);
+ transform: rotate(90deg);
+ }
+
+.rotate180 {
+ -webkit-transform: rotate(180deg);
+ -moz-transform: rotate(180deg);
+ -o-transform: rotate(180deg);
+ -ms-transform: rotate(180deg);
+ transform: rotate(180deg);
+ }
+
+.story-01 .right p {
+   /*padding-left: 38px;*/
+   /* text-align: left*/
+}
+
+.wedding-01 {
+    padding: 120px 0;
+    background: rgba(255, 155, 142, 0.17)
+}
+
+.wedding-01 .btn-default {
+    margin-left: 20px;
+    padding: 10px 25px;
+    color: #fff;
+    border: 1px solid #FF9B8E;
+    border-radius: 30px;
+    background: #FF9B8E;
+    letter-spacing: 3px
+}
+
+.wedding-01 .btn-default:hover {
+    color: #FF9B8E;
+    border: 1px solid #FF9B8E;
+    background: transparent
+}
+
+.wedding-01 h3 {
+    margin-bottom: 30px;
+    color: #FF9B8E;
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px
+}
+
+.wedding-01 p {
+    font-size: 1.6em
+}
+
+.accomm-01 {
+    padding: 120px 0
+}
+
+.accomm-01 img {
+    width: 32em;
+     border-top-left-radius: 100px;
+     -webkit-border-top-left-radius: 100px;
+     -moz-border-top-left-radius: 100px;
+     border-bottom-right-radius: 100px;
+     -webkit-border-bottom-right-radius: 100px;
+     -moz-border-bottom-right-radius: 100px;
+    float: left
+}
+
+.accomm-01 h3 {
+    margin-bottom: 50px;
+    color: #FF9B8E;
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px
+}
+
+.accomm-01 .text-left img {
+    float: right
+}
+
+.accomm-01 .text-left h5,.accomm-01 .text-left p {
+    padding-right: 170px
+}
+
+.accomm-01 .text-right h5,.accomm-01 .text-right p {
+    padding-left: 170px
+}
+
+.accomm-01 h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px
+}
+
+.accomm-01 p {
+    font-size: 1.6em;
+    line-height: 28px
+}
+
+.registry-01 {
+    padding: 120px 0;
+    background: rgba(255, 155, 142, 0.17)
+}
+
+.registry-01 img {
+    width: 100%;
+    max-width: 200px
+}
+
+.registry-01 h3 {
+    margin-bottom: 50px;
+    color: #FF9B8E;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold
+}
+
+.registry-01 h5 {
+    font-weight: bold;
+    letter-spacing: 2px
+}
+
+.registry-01 p {
+    font-size: 1.4em
+}
+
+.registry-01 .btn-default {
+    margin-top: 10px;
+    color: #fff;
+    border: 1px solid #FF9B8E;
+    border-radius: 0;
+    border-radius: 30px;
+    background: #FF9B8E;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px
+}
+
+.registry-01 .btn-default:hover {
+    color: #FF9B8E;
+    border: 1px solid #FF9B8E;
+    background: transparent
+}
+
+.rsvp-01 {
+    padding: 120px 0
+}
+
+.rsvp-01 h3 {
+    margin-bottom: 20px;
+    color: #FF9B8E;
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px
+}
+
+.rsvp-01 p {
+    margin-bottom:10px;
+    font-size: 1.6em;
+    line-height: 28px
+}
+
+.rsvp-01 .form-group {
+    position: relative
+}
+
+.rsvp-01 .form-control {
+    width: 400px;
+    height: 50px;
+    border-radius: 30px
+}
+
+.rsvp-01 .btn-default {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+    color: #fff;
+    border: 1px solid #FF9B8E;
+    border-radius: 0 30px 30px 0;
+    background: #FF9B8E;
+    letter-spacing: 2px
+}
+
+.rsvp-01 .btn-default:hover {
+    color: #FF9B8E;
+    border: 1px solid #FF9B8E;
+    background: transparent
+}
+
+.rsvp-01 ::-webkit-input-placeholder {
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+
+.rsvp-01 :-moz-placeholder {
+    text-align: center
+}
+
+.rsvp-01 ::-moz-placeholder {
+    text-align: center
+}
+
+.rsvp-01 :-ms-input-placeholder {
+    text-align: center
+}
+
+footer {
+    padding: 50px 0;
+    color: #828282;
+    border-top: 2px dashed #dedede;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 2px
+}
+
+.scroll-to-top a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px
+}
+
+.scroll-to-top {
+    z-index: 9999;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0;
+    border-radius: 4px;
+    background: #FF9B8E;
+    filter: alpha(opacity=0);
+    text-align: center;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s
+}
+
+.scroll-to-top.affix {
+    opacity: 0.5;
+    filter: alpha(opacity=50)
+}
+
+.affix {
+    position: fixed
+}
+
+@media only screen and (max-width: 992px) {
+    .tooltip {
+        display: none !important;
+    }
+    .circle-border {
+        display: inline-block;
+        color: #fff;
+        font: 12px sans-serif;
+        background: #FF9B8E;
+        border: 2px dotted #eee;
+        width: 4em;
+        height: 4em;
+        border-radius: 100px;
+        line-height: 55px;
+        text-align: center;
+        position: relative;
+        left: 10%;
+        top: -15px;
+    }
+
+    .rotate90 {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        float: right;
+        margin: 0 0 10px 10px;
+    }
+    .header-01 h1 {
+        font-size:3.8em
+    }
+
+    .header-01 h1 a {
+        padding: 0.3em 0.75em
+    }
+
+    .header-01 .navbar-default {
+        padding: 0
+    }
+
+    .header-01 .navbar-fixed-top {
+        z-index: 99999
+    }
+
+    .header-01 .navbar-toggle {
+        border-color: transparent
+    }
+
+    .header-01 .navbar-toggle:focus,.header-01 .navbar-toggle:hover {
+        background: transparent
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .header-01 h1 {
+        font-size:3.4em
+    }
+
+    .header-01 h1 a {
+        padding: 0.3em 0.75em
+    }
+
+    .header-01 .navbar-default {
+        padding: 0
+    }
+
+    .header-01 .navbar-fixed-top {
+        z-index: 99999
+    }
+
+    .header-01 .navbar-toggle {
+        position: absolute;
+        right: 0;
+        border-color: transparent
+    }
+
+    .header-01 .navbar-toggle:focus,.header-01 .navbar-toggle:hover {
+        background: transparent
+    }
+
+    .header-01 .navbar>.container-fluid .navbar-brand,.header-01 .navbar>.container .navbar-brand {
+        display: inline-block;
+        float: none
+    }
+
+    .header-01 .navbar-header {
+        float: none;
+        text-align: center
+    }
+
+    .header-01 .navbar-right {
+        float: none !important;
+        margin-bottom: 10px;
+        text-align: center
+    }
+
+    .header-01 .navbar-nav>li {
+        display: inline-block;
+        float: none
+    }
+
+    .story-01 .col-md-6 {
+        margin-bottom: 20px
+    }
+
+    .story-01 img {
+        top: 0 !important
+    }
+    .accomm-01 img {
+    width: 32em;
+     border-top-left-radius: 100px;
+     -webkit-border-top-left-radius: 100px;
+     -moz-border-top-left-radius: 100px;
+     border-bottom-right-radius: 100px;
+     -webkit-border-bottom-right-radius: 100px;
+     -moz-border-bottom-right-radius: 100px;
+    float: left
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+}
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        padding-right:30px;
+        padding-left: 30px
+    }
+
+    .header-01 h1 {
+        font-size: 3em
+    }
+
+    .header-01 h1 a {
+        padding: 0.3em 0.75em
+    }
+
+    .header-01 .navbar-nav li {
+        display: block
+    }
+
+    .header-01 .navbar-default {
+        padding: 0
+    }
+
+    .header-01 .navbar-fixed-top {
+        z-index: 1000
+    }
+
+    .header-01 .navbar-header {
+        float: none;
+        text-align: center
+    }
+
+    .header-01 .navbar-toggle {
+        border-color: transparent
+    }
+
+    .header-01 .navbar-toggle:focus,.header-01 .navbar-toggle:hover {
+        background: transparent
+    }
+
+    .story-01 .col-md-6 {
+        margin-bottom: 20px;
+        text-align: center
+    }
+
+    .story-01 img {
+        top: 0 !important;
+        float: none !important;
+        margin-bottom: 20px
+    }
+
+    .story-01 p {
+        padding: 0 !important;
+        text-align: center !important
+    }
+
+    .accomm-01 .col-md-6 {
+        margin-bottom: 20px;
+        text-align: center
+    }
+
+    .accomm-01 img {
+        float: none !important;
+        margin-bottom: 20px
+    }
+
+    .accomm-01 .text-left h5,.accomm-01 .text-left p,.accomm-01 .text-right h5,.accomm-01 .text-right p {
+        padding: 0
+    }
+
+    .wedding-01 .btn-default {
+        margin-top: 20px;
+        margin-left: 0
+    }
+
+    .rsvp-01 .form-control {
+        width: 100%
+    }
+
+}
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+    .accomm-01 img {
+    width: 32em;
+    }
+
+    .tooltip {
+        display: none !important;
+    }
+
+    .circle-border {
+        display: inline-block;
+        color: #fff;
+        font: 12px sans-serif;
+        background: #FF9B8E;
+        border: 2px dotted #eee;
+        width: 4em;
+        height: 4em;
+        border-radius: 100px;
+        line-height: 55px;
+        text-align: center;
+        position: relative;
+        left: -4px;
+        top: 94px;
+ }
+}
+
+
+
+
+
