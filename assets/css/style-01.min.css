@@ -48,9 +48,9 @@ body {
    /* letter-spacing: 1px*/
 }
 
-/*.en {
-  display: none !important;
-}*/
+h3.en {
+    display: none;
+}
 
 .tooltip.top .tooltip-inner {
     background-color:red;
@@ -837,7 +837,14 @@ and (max-device-width : 1024px)  {
  }
 }
 
+.remodal-wrapper h1 {
+color:#e57373
+}
 
-
+.remodal-wrapper ol li {
+    font-size: 16px;
+    text-align: left;
+    margin-top:10px;
+}
 
 
